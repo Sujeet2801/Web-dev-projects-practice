@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mood Tracker </title>
+    <script src="script.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+
+<body class="bg-gray-900 text-white">
+
+    <header class="bg-gray-800 py-4 shadow-lg">
+        <nav class="container mx-auto flex justify-between items-center px-6">
+            <div class="text-2xl font-semibold">Mood Tracker</div>
+            <div class="space-x-6">
+                <a href="index.html" class="text-lg hover:text-yellow-400">Home</a>
+                <a href="tracking.html" class="text-lg hover:text-yellow-400">Start Tracking</a>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container mx-auto text-center py-10 px-4">
+        <h1 class="text-4xl font-bold mb-6">Track your mood, visualize your progress</h1>
+        <p class="text-lg text-gray-300 mb-6">
+            Daily, weekly, monthly. See patterns, gain insights, and take control of your well-being.</p>
+
+        <div class="flex justify-center">
+            <img src="./images/1 (2).webp" class="h-[500px] w-[1250px] rounded-lg shadow-lg"
+                alt="Mood Tracker Visualization">
+        </div>
+
+        <div class="mt-8">
+            <a href="tracking.html">
+                <button class="bg-yellow-500 hover:bg-yellow-600 text-gray-900 
+                px-6 py-3 rounded-full font-semibold text-lg shadow-md">Start Tracking</button>
+            </a>
+        </div>
+    </main>
+
+    <section class="bg-gray-800 py-10 mt-10">
+        <div class="container mx-auto text-center">
+            <h2 class="text-3xl font-semibold mb-4">Articles & Insights</h2>
+            <p class="text-gray-300 mb-6">Explore expert advice and stories on mental well-being.</p>
+            <button class="bg-blue-500 hover:bg-blue-600 text-white px-6 py-3 rounded-full 
+        font-semibold text-lg shadow-md">Read More</button>
+        </div>
+    </section>
+</body>
+
+</html>
