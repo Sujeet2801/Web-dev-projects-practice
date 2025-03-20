@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mood Tracker</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.15/index.global.min.js"></script>
+</head>
+
+<body class="bg-gray-100">
+    
+    <header class="bg-gray-800 py-4 shadow-lg text-white">
+        <nav class="container mx-auto flex justify-between items-center px-6">
+            <div class="text-2xl font-semibold">Mood Tracker</div>
+            <div class="space-x-6">
+                <a href="index.html" class="text-lg hover:text-yellow-400">Home</a>
+                <a href="tracking.html" class="text-lg hover:text-yellow-400">Start Tracking</a>
+            </div>
+        </nav>
+    </header>
+
+    
+    <div class="flex justify-center mt-6">
+        <div class="relative inline-block text-left">
+            <button id="menu-button"
+                class="w-full flex justify-center gap-2 rounded-md bg-white px-4 py-2 text-sm font-semibold text-gray-900 ring-1 shadow-md ring-gray-300 hover:bg-gray-50">
+                Select Mood
+                <svg class="-mr-1 size-5 text-gray-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                    <path fill-rule="evenodd"
+                        d="M5.22 8.22a.75.75 0 0 1 1.06 0L10 11.94l3.72-3.72a.75.75 0 1 1 1.06 1.06l-4.25 4.25a.75.75 0 0 1-1.06 0L5.22 9.28a.75.75 0 0 1 0-1.06Z"
+                        clip-rule="evenodd" />
+                </svg>
+            </button>
+
+            <ul id="dropdown-menu" class="absolute mt-2 w-56 bg-white rounded-md shadow-lg ring-1 ring-black/5 hidden">
+            </ul>
+        </div>
+    </div>
+    
+    <div class="flex justify-center mt-4">
+        <button id="addCategory" class="bg-blue-500 text-white px-4 py-2 rounded-md hover:bg-blue-700 transition">Add
+            Custom Mood</button>
+    </div>
+
+    <div class="max-w-4xl mx-auto mt-8 p-6 bg-white rounded-lg shadow-lg border border-gray-200">
+        <h2 class="text-2xl font-semibold text-gray-800 text-center mb-4">Mood Tracking Calendar</h2>
+        <div id="calendar"></div>
+    </div>
+
+</body>
+
+</html>
